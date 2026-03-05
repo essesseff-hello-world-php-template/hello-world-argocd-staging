@@ -2,7 +2,7 @@
 set -e
 
 # Templated variables - replaced at onboarding
-NAMESPACE="essesseff-hello-world-fastapi-template"
+NAMESPACE="essesseff-hello-world-php-template"
 
 echo "=========================================="
 echo "⚠️  NAMESPACE OFFBOARDING WARNING ⚠️"

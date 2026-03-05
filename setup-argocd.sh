@@ -6,14 +6,14 @@
 
 # This script sets up Argo CD notifications for an essesseff app as well as the Argo CD deployment
 # configuration for the app.
-# Template variables (${APP_NAME}, essesseff-hello-world-fastapi-template, {{REPOSITORY_ID}}, etc.) 
+# Template variables (${APP_NAME}, essesseff-hello-world-php-template, {{REPOSITORY_ID}}, etc.) 
 # are replaced when apps are created from templates.
 
 set -e
 
 # Override these if they're set in .env, otherwise use defaults
 APP_NAME="hello-world"
-GITHUB_ORG="essesseff-hello-world-fastapi-template"
+GITHUB_ORG="essesseff-hello-world-php-template"
 ENVIRONMENT="staging"
 REPOSITORY_ID="{{REPOSITORY_ID}}"
 
