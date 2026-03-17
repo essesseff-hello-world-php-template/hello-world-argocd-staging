@@ -3,7 +3,7 @@ set -e
 
 # Templated variables - replaced at onboarding
 APP_NAME="hello-world"
-NAMESPACE="essesseff-hello-world-php-template"
+NAMESPACE="{{K8S_NAMESPACE}}"
 ENV="staging"
 GITHUB_REPO_ID="{{REPOSITORY_ID}}"
 
