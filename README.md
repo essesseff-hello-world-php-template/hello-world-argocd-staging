@@ -35,7 +35,7 @@ hello-world-argocd-staging/
 ├── ghcr-credentials-secret.yaml.template             # GHCR credentials (set once per K8s cluster for organization) template
 ├── notifications-configmap.yaml.template             # Argo CD notifications configuration template
 ├── offboarding/
-│   └── offboard-essesseff-hello-world-php-template.sh # script for offboarding the essesseff-hello-world-php-template namespace from K8s
+│   └── offboard-essesseff-hello-world-php-template.sh # script for offboarding the {{K8S_NAMESPACE}} namespace from K8s
 │   └── offboard-hello-world-staging.sh               # script for offboarding the hello-world staging app 1) from essesseff only or 2) from Argo CD and K8s entirely
 ├── setup-argocd-cluster.sh           # Argo CD K8s setup script 
 ├── setup-argocd.sh                   # Argo CD hello-world-staging essesseff app setup script 
@@ -136,7 +136,7 @@ hello-world-argocd-staging/
    ./offboard-hello-world-staging.sh
    ```
 
-### How to Offboard essesseff-hello-world-php-template K8s Namespace and All of its Resources
+### How to Offboard {{K8S_NAMESPACE}} K8s Namespace and All of its Resources
 
 1. **Execute the offboarding script**:
    ```bash
@@ -150,7 +150,7 @@ hello-world-argocd-staging/
 - **Name**: `hello-world-staging`
 - **Namespace**: `argocd`
 - **Source Repository**: `hello-world-config-staging`
-- **Destination Namespace**: `essesseff-hello-world-php-template`
+- **Destination Namespace**: `{{K8S_NAMESPACE}}`
 - **Sync Policy**: Automated with prune and self-heal enabled
 
 ## Deployment Process
